@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Определение языка страницы [1] -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title> <!-- Заголовок в кладке браузера [2] -->
+</head>
+<body>
+
+    <!-- Cabeçalho do site [3] -->
+    <header>
+        <h1>Konstantin</h1> <!-- Главный заголовок с именем [4] -->
+        
+        <!-- Menu de Navegação [5, 6] -->
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sessão Sobre Mim [7, 8] -->
+        <section id="sobre-mim">
+            <h2>Sobre mim</h2>
+            <!-- Атрибут 'alt' для доступности [9, 10] -->
+            <img src="img/pngtree-avatar-of-a-man-wearing-sunglasses-image_2569096.jpg" alt="Minha foto">
+
+            <article>
+                <p>Olá, eu sou o Konstantin, sou um desenvolvedor web.</p> <!-- Текст из урока [11] -->
+            </article>
+        </section>
+
+        <!-- Sessão de Habilidades e Tecnologias (Tabela) [12, 13] -->
+        <section id="habilidades">
+            <h2>Habilidades e tecnologias</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnologia</th>
+                        <th>Nível</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Данные таблицы из уроков [14, 15] -->
+                    <tr>
+                        <td>HTML</td>
+                        <td>Iniciante</td>
+                        <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediário</td>
+                        <td>Experiência com flexbox, grid e animações CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                        <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Desafio Final: Formulário de Candidatura para Professores [16] -->
+        <section id="contato">
+            <h2>Cadastro de Professores</h2>
+            <form id="teacher-form">
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade">
+                </div>
+
+                <!-- Выбор предмета (Radio) [16] -->
+                <fieldset>
+                    <legend>Para qual matéria você está se candidatando para lecionar?</legend>
+                    <input type="radio" id="math" name="assunto" value="matematica">
+                    <label for="math">Matemática</label>
+                    
+                    <input type="radio" id="port" name="assunto" value="portugues">
+                    <label for="port">Português</label>
+                    
+                    <input type="radio" id="bio" name="assunto" value="biologia">
+                    <label for="bio">Biologia</label>
+                </fieldset>
+
+                <!-- Выбор смен (Checkbox) [16] -->
+                <fieldset>
+                    <legend>Quais os turnos disponíveis?</legend>
+                    <input type="checkbox" id="manha" name="turnos" value="manha">
+                    <label for="manha">Manhã</label>
+                    
+                    <input type="checkbox" id="tarde" name="turnos" value="tarde">
+                    <label for="tarde">Tarde</label>
+                    
+                    <input type="checkbox" id="noite" name="turnos" value="noite">
+                    <label for="noite">Noite</label>
+                </fieldset>
+
+                <div>
+                    <label for="bio-text">Descrição sobre si mesmo (máximo 200 caracteres):</label><br>
+                    <textarea id="bio-text" name="bio" maxlength="200" rows="4" cols="50"></textarea>
+                </div>
+
+                <button type="submit">Enviar candidatura</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé do site [3, 16] -->
+    <footer>
+        <p>&copy; 2026 Meu Portfólio - Da ideia ao digital, HTML é o inicial.</p>
+    </footer>
+
+</body>
+</html>
